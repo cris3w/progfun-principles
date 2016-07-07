@@ -5,6 +5,7 @@ import org.scalatest.FunSuite
 import org.junit.runner.RunWith
 import org.scalatest.junit.JUnitRunner
 
+
 /**
  * This class implements a ScalaTest test suite for the methods in object
  * `Lists` that need to be implemented as part of this assignment. A test
@@ -23,8 +24,8 @@ import org.scalatest.junit.JUnitRunner
  * - Start the sbt console and run the "test" command
  * - Right-click this file in eclipse and chose "Run As" - "JUnit Test"
  */
- @RunWith(classOf[JUnitRunner])
-  class ListsSuite extends FunSuite {
+@RunWith(classOf[JUnitRunner])
+class ListsSuite extends FunSuite {
  
   /**
    * Tests are written using the `test` operator which takes two arguments:
@@ -47,7 +48,7 @@ import org.scalatest.junit.JUnitRunner
    * This allows tests to be written in a more readable manner:
    */
   test("one plus one is three?") {
-    assert(1 + 1 == 3) // This assertion fails! Go ahead and fix it.
+    assert(1 + 1 == 2) // This assertion fails! Go ahead and fix it.
   }
 
 
@@ -72,8 +73,9 @@ import org.scalatest.junit.JUnitRunner
    * We recommend to always use the `===` equality operator when writing tests.
    */
   test("details why one plus one is not three") {
-    assert(1 + 1 === 3) // Fix me, please!
+    assert(1 + 1 === 2) // Fix me, please!
   }
+
 
   /**
    * In order to test the exceptional behavior of a methods, ScalaTest offers
@@ -120,7 +122,5 @@ import org.scalatest.junit.JUnitRunner
   test("max of a few numbers") {
     assert(max(List(3, 7, 2)) === 7)
   }
-
-
 
 }
